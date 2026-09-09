@@ -1,0 +1,69 @@
+{
+  "_info": "Ubah nilai pada file ini untuk menyesuaikan website ke kampung/desa lain (nama situs, logo, favicon, kontak, meta, dll.). Tidak perlu menyentuh index.html.",
+
+  "topbar": {
+    "textHtml": "Website ini masih dalam <strong>tahap pengembangan</strong> dan merupakan bentuk usulan atau draf yang dibuat serta diajukan oleh royswanimbo.id. Kujungi Hak Pengembang Web 👉 <a href=\"https://royswanimbo-dev.github.io/royswanimbo.io/\" target=\"_blank\" rel=\"noopener noreferrer\"> Roys Wanimbo</a>",
+    "linkName": "Roys Wanimbo",
+    "linkUrl": "https://royswanimbo-dev.github.io/royswanimbo.io/"
+  },
+
+  "site": {
+    "name": "Kampung Ilunggime",
+    "logoText": {
+      "primary": "KAMPUNG",
+      "secondary": "ILUNGGIME"
+    },
+    "tagline": "Distrik Buguk Gonak • Kabupaten Lanny Jaya • Papua Pegunungan",
+    "url": "https://kampungilunggime.id/",
+    "logo": "./img/logo kab lanny jaya.jfif",
+    "favicon": "./img/logo kab lanny jaya.jfif",
+    "themeColor": "#1a3c34"
+  },
+
+  "meta": {
+    "title": "Kampung Ilunggime - Distrik Buguk Gonak, Lanny Jaya",
+    "description": "Kampung Ilunggime, Distrik Buguk Gonak, Kabupaten Lanny Jaya, Papua Pegunungan. Kaya akan alam, budaya, dan potensi wisata.",
+    "keywords": "Kampung Ilunggime, Buguk Gonak, Kabupaten Lanny Jaya, Papua Pegunungan, wisata alam, budaya Papua",
+    "author": "Kampung Ilunggime",
+    "ogTitle": "Kampung Ilunggime - Distrik Buguk Gonak, Lanny Jaya",
+    "ogDescription": "Kampung yang memiliki pesona alam, budaya lokal, dan potensi wisata yang menarik di Papua Pegunungan.",
+    "ogImage": "./img/logo kab lanny jaya.jfif",
+    "twitterTitle": "Kampung Ilunggime - Distrik Buguk Gonak, Lanny Jaya",
+    "twitterDescription": "Pesona alam dan budaya Kampung Ilunggime di Papua Pegunungan",
+    "twitterImage": "./img/logo kab lanny jaya.jfif"
+  },
+
+  "hero": {
+    "title": "KAMPUNG ILUNGGIME",
+    "subtitle": "Distrik Buguk Gonak • Kabupaten Lanny Jaya • Papua Pegunungan",
+    "description": "Kampung yang menyimpan kekayaan alam, budaya, dan potensi wisata yang menjadikan Ilunggime sebagai destinasi yang penuh harapan.",
+    "slides": [
+      "./img/air tejun elak takur.png",
+      "./img/kantor ilungime.png",
+      "./img/Rumput mei.png",
+      "./img/neas-bersama-hano-wene-mengumpulkan-dana -untuk-membangun-plta-di-kampung-iIllunggime-kabupaten-lanny-jaya.jpg",
+      "./img/panorama awan dan pegunungan.png",
+      "./img/gerej imanuel.png"
+    ]
+  },
+
+  "contact": {
+    "addressHtml": "Kampung Ilunggime, Distrik Buguk Gonak,<br>Kabupaten Lanny Jaya, Provinsi Papua Pegunungan",
+    "phoneDisplay": "+62 8xx-xxxx-xxxx",
+    "whatsappNumber": "628xxxxxxxxx",
+    "whatsappMessage": "Halo Admin Kampung Ilunggime, saya ingin bertanya seputar Kampung Ilunggime.",
+    "email": "kampungilunggime@gmail.com",
+    "operationalHours": "Senin – Jumat: 08.00 – 16.00 WIT",
+    "social": {
+      "facebook": "#",
+      "instagram": "#"
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2026 Pemerintah Kampung Ilunggime. Hak cipta dilindungi.",
+    "note": "Menjaga keindahan alam, budaya, dan semangat gotong royong masyarakat Ilunggime — Papua Pegunungan.",
+    "poweredByName": "Roys Wanimbo",
+    "poweredByUrl": "https://royswanimbo-dev.github.io/royswanimbo.io/"
+  }
+}

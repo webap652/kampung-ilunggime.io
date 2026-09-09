@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Kampung Ilunggime - Distrik Buguk Gonak, Kabupaten Lanny Jaya</title>
+    <meta name="title" content="Kampung Ilunggime - Distrik Buguk Gonak, Kabupaten Lanny Jaya">
+    
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Kampung Ilunggime, Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan. Kaya akan budaya, alam, dan semangat gotong royong masyarakat.">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="Kampung Ilunggime, Buguk Gonak, Kabupaten Lanny Jaya, Papua Pegunungan, wisata kampung, budaya Papua, adat Lanny Jaya">
+    
+    <!-- Author & Robots -->
+    <meta name="author" content="Kampung Ilunggime">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kampung Ilunggime - Distrik Buguk Gonak, Kabupaten Lanny Jaya">
+    <meta property="og:description" content="Kampung Ilunggime, Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan dengan panorama alam dan semangat masyarakat yang maju.">
+    <meta property="og:image" content="./img/logo kab lanny jaya.jfif">
+    <meta property="og:url" content="https://kampungilunggime.id/">
+    <meta property="og:site_name" content="Kampung Ilunggime">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kampung Ilunggime - Distrik Buguk Gonak, Kabupaten Lanny Jaya">
+    <meta name="twitter:description" content="Kampung Ilunggime di Distrik Buguk Gonak, Kabupaten Lanny Jaya, Papua Pegunungan">
+    <meta name="twitter:image" content="./img/logo kab lanny jaya.jfif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/logo kab lanny jaya.jfif">
+    <link rel="apple-touch-icon" href="./img/logo kab lanny jaya.jfif">
+    <link rel="shortcut icon" href="./img/logo kab lanny jaya.jfif">
+    
+    <!-- Fonts & Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1a3c34">
+    <meta name="msapplication-TileColor" content="#1a3c34">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #1a3c34;
+            --accent: #f59e0b;
+        }
+        
+        /* HERO SLIDESHOW */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            will-change: opacity, transform;
+        }
+
+        .hero-slide.is-active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        @keyframes kenburns-in {
+            from { transform: scale(1); }
+            to   { transform: scale(1.18); }
+        }
+
+        @keyframes kenburns-out {
+            from { transform: scale(1.18); }
+            to   { transform: scale(1); }
+        }
+
+        .hero-slide.zoom-in  { animation: kenburns-in 8s ease-out forwards; }
+        .hero-slide.zoom-out { animation: kenburns-out 8s ease-out forwards; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-slide { transition: opacity 0.4s ease; }
+            .hero-slide.zoom-in,
+            .hero-slide.zoom-out { animation: none; }
+        }
+
+        /* NAVIGATION LINKS */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .nav-link:hover {
+            color: #f59e0b;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.nav-active::after {
+            width: 100%;
+        }
+
+        .nav-link.nav-active {
+            color: #f59e0b;
+        }
+        
+        /* SECTION TITLES & CARDS */
+        .section-title {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .option-custom option {
+            background-color: #ffffff !important;
+            color: #064e3b !important;
+        }
+
+        /* UTILITIES */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+
+        section[id] {
+            scroll-margin-top: 96px;
+        }
+
+        /* Batik/ornamen Papua pattern subtle */
+        .papua-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* FLOATING ACTION BUTTONS (WhatsApp & Back to Top) */
+        .fab {
+            transition: opacity .3s ease, transform .3s ease, background-color .3s ease, box-shadow .3s ease;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+
+    <!-- ===== TOPBAR DISCLAIMER (situs dalam tahap pengembangan) ===== -->
+    <div class="bg-amber-500 text-emerald-950 print:hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2">
+            <p class="flex items-center justify-center gap-2 text-center text-xs sm:text-sm leading-snug">
+                <i class="fa-solid fa-triangle-exclamation shrink-0" aria-hidden="true"></i>
+                <span>
+                    <span data-bind-html="topbar.textHtml">Website ini masih dalam tahap pengembangan dan merupakan bentuk usulan atau draf yang dibuat serta diajukan oleh:   <a href="https://royswanimbo-dev.github.io/royswanimbo.io/" onclick="smoothScrollTo('royswanimbo.id')" class="nav-link text-emerald-900 hover:text-amber-600">royswanimbo.id</a>  </span>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- ===== /TOPBAR DISCLAIMER ===== -->
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav x-data="{ mobileMenu: false }"
+         @keydown.escape.window="mobileMenu = false"
+         class="bg-white border-b border-stone-200 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center px-6 py-4">
+                <!-- Logo -->
+                <a href="./" aria-label="Kampung Ilunggime - Beranda" class="flex items-center gap-3">
+                    <img src="img/logo kab lanny jaya.jfif" 
+                         alt="Logo Kampung Ilunggime" 
+                         class="h-10 md:h-12 w-auto"
+                         data-bind-attr="src:site.logo,alt:site.name"
+                         onerror="this.style.display='none'">
+                    <div>
+                        <span class="logo-text text-xl md:text-2xl font-bold tracking-tight text-emerald-900" data-bind-text="site.logoText.primary">KAMPUNG</span>
+                        <span class="logo-text text-xl md:text-2xl font-bold tracking-tight text-amber-600" data-bind-text="site.logoText.secondary">ILUNGGIME</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a href="#beranda" onclick="smoothScrollTo('beranda')" class="nav-link text-emerald-900 hover:text-amber-600">Beranda</a>
+                    <a href="#tentang" onclick="smoothScrollTo('tentang')" class="nav-link text-emerald-900 hover:text-amber-600">Tentang</a>
+                    <a href="#transparansi" onclick="smoothScrollTo('transparansi')" class="nav-link text-emerald-900 hover:text-amber-600">Transparansi</a>
+                    <a href="#potensi" onclick="smoothScrollTo('potensi')" class="nav-link text-emerald-900 hover:text-amber-600">Potensi</a>
+                    <a href="#galeri" onclick="smoothScrollTo('galeri')" class="nav-link text-emerald-900 hover:text-amber-600">Galeri</a>
+                    <a href="#pemerintahan" onclick="smoothScrollTo('pemerintahan')" class="nav-link text-emerald-900 hover:text-amber-600">Pemerintahan</a>
+                    <a href="#kontak" onclick="smoothScrollTo('kontak')" class="nav-link text-emerald-900 hover:text-amber-600">Kontak</a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button @click="mobileMenu = !mobileMenu"
+                        :aria-expanded="mobileMenu"
+                        aria-controls="mobile-menu"
+                        aria-label="Buka menu navigasi"
+                        class="md:hidden text-2xl text-emerald-900 focus:outline-none focus:text-amber-600">
+                    <i class="fa-solid fa-bars" x-show="!mobileMenu"></i>
+                    <i class="fa-solid fa-xmark" x-show="mobileMenu" x-cloak></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (scrollable agar semua menu tetap terjangkau di layar kecil) -->
+        <div id="mobile-menu"
+             x-show="mobileMenu"
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 -translate-y-2"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-2"
+             x-cloak
+             class="md:hidden bg-white border-t border-stone-200 shadow-lg">
+            <div class="flex flex-col px-6 py-4 text-lg max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+                <a href="#beranda" @click.prevent="smoothScrollTo('beranda'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Beranda</a>
+                <a href="#tentang" @click.prevent="smoothScrollTo('tentang'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Tentang</a>
+                <a href="#transparansi" @click.prevent="smoothScrollTo('transparansi'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Transparansi</a>
+                <a href="#potensi" @click.prevent="smoothScrollTo('potensi'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Potensi</a>
+                <a href="#galeri" @click.prevent="smoothScrollTo('galeri'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Galeri</a>
+                <a href="#pemerintahan" @click.prevent="smoothScrollTo('pemerintahan'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600 border-b border-stone-100">Pemerintahan</a>
+                <a href="#kontak" @click.prevent="smoothScrollTo('kontak'); mobileMenu = false" class="nav-link block py-3 text-emerald-900 hover:text-amber-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== /NAVIGATION ===== -->
+
+    <!-- ===== HERO / BERANDA ===== -->
+    <section id="beranda" class="relative min-h-screen flex items-center overflow-hidden py-24 md:py-0">
+        <div id="hero-slideshow" class="absolute inset-0 z-0 bg-emerald-950" aria-hidden="true"></div>
+        <div class="absolute inset-0 z-0 bg-black/50" aria-hidden="true"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 text-center text-white z-10">
+            <div class="flex justify-center mb-8">
+                <a href="./" aria-label="Kampung Ilunggime - Beranda">
+                    <img src="img/logoil.png" 
+                         alt="Kampung Ilunggime" 
+                         class="h-32 w-auto drop-shadow-2xl rounded-full"
+                         onerror="this.style.display='none'">
+
+
+                </a>
+            </div>
+            <a href="./" class="inline-block">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter logo-text mb-4" data-bind-text="hero.title">
+                    KAMPUNG ILUNGGIME
+                </h1>
+            </a>
+            <p class="text-xl sm:text-2xl md:text-3xl font-light tracking-wide mb-8" data-bind-text="hero.subtitle">
+                Distrik Buguk Gonak &bull; Kabupaten Lanny Jaya &bull; Papua Pegunungan
+            </p>
+            
+            <div class="max-w-xl mx-auto">
+                <p class="text-lg mb-10 text-white/90 leading-relaxed" data-bind-text="hero.description">
+                    Kampung Ilunggime merupakan salah satu kampung yang berada di Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan. Dikelilingi panorama pegunungan yang indah, udara yang sejuk, serta masyarakat yang menjunjung tinggi nilai adat dan budaya, Kampung Ilunggime terus berkembang menuju kampung yang maju, mandiri, aman, dan sejahtera.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#tentang" 
+                   onclick="smoothScrollTo('tentang')"
+                   class="uppercase inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-10 py-5 rounded-none transition-all text-lg shadow-md">
+                    <i class="fa-solid fa-circle-info mr-3"></i>
+                    Profil Kampung
+                </a>
+                <a href="#potensi" 
+                   onclick="smoothScrollTo('potensi')"
+                   class="uppercase inline-flex items-center justify-center border-2 border-white hover:bg-white hover:text-emerald-900 text-white font-semibold px-10 py-5 rounded-none transition-all text-lg">
+                    <i class="fa-solid fa-star mr-3"></i>
+                    Potensi & Daya Tarik
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce z-10">
+            <i class="fa-solid fa-chevron-down text-4xl text-white/70"></i>
+        </div>
+    </section>
+    <!-- ===== /HERO ===== -->
+
+    <!-- ===== TENTANG KAMPUNG ===== -->
+    <section id="tentang" class="py-16 md:py-24 bg-white papua-pattern">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">Tentang Kampung Ilunggime</h2>
+                <p class="text-xl text-emerald-700">Mengenal sejarah, budaya, potensi, dan kehidupan masyarakat Kampung Ilunggime</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Teks Profil -->
+                <div>
+                    <h3 class="section-title text-2xl font-bold text-emerald-900 mb-4">Selamat Datang di Kampung Ilunggime</h3>
+                    <p class="text-stone-600 leading-relaxed mb-4">
+                        Kampung Ilunggime merupakan salah satu kampung yang terletak di Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan. Kampung ini berada di wilayah pegunungan yang memiliki keindahan alam yang masih alami serta lingkungan yang bersih dan nyaman.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed mb-6">
+                        Masyarakat Kampung Ilunggime hidup dalam semangat persaudaraan, gotong royong, dan menjunjung tinggi adat istiadat yang diwariskan secara turun-temurun. Potensi kampung meliputi sektor pertanian, peternakan, pendidikan, budaya, dan pembangunan masyarakat yang terus berkembang.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="fa-solid fa-location-dot text-amber-500 w-5"></i>
+                            <span class="text-stone-700">Distrik Buguk Gonak, Kabupaten Lanny Jaya, Papua Pegunungan</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="fa-solid fa-mountain text-amber-500 w-5"></i>
+                            <span class="text-stone-700">Kawasan Pegunungan Tengah Papua</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="fa-solid fa-people-group text-amber-500 w-5"></i>
+                            <span class="text-stone-700">Masyarakat Adat Lanny dan Warga Kampung Ilunggime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistik / Highlight Kampung -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-emerald-900 text-white p-6 text-center flex flex-col justify-center rounded-lg">
+                        <div class="text-4xl font-bold text-amber-400 mb-1"><i class="fa-solid fa-mountain-sun"></i></div>
+                        <div class="text-sm text-emerald-200 font-medium">Pegunungan Ilunggime</div>
+                        <div class="text-xs text-emerald-300 mt-1">Aman dan Asri</div>
+                    </div>
+                    <div class="bg-amber-500 text-white p-6 text-center flex flex-col justify-center rounded-lg">
+                        <div class="text-4xl font-bold mb-1"><i class="fa-solid fa-compass"></i></div>
+                        <div class="text-sm text-amber-100 font-medium">Kawasan Alam</div>
+                        <div class="text-xs text-amber-500_darker mt-1">Udara Sejuk & Panorama Indah</div>
+                    </div>
+                    <div class="bg-emerald-700 text-white p-6 text-center flex flex-col justify-center rounded-lg">
+                        <div class="text-4xl font-bold mb-1"><i class="fa-solid fa-users-rays"></i></div>
+                        <div class="text-sm text-emerald-100 font-medium">Gotong Royong</div>
+                        <div class="text-xs text-emerald-200 mt-1">Persaudaraan & Kebersamaan</div>
+                    </div>
+                    <div class="bg-stone-800 text-white p-6 text-center flex flex-col justify-center rounded-lg">
+                        <div class="text-4xl font-bold text-amber-400 mb-1"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div class="text-sm text-stone-200 font-medium">Maju & Sejahtera</div>
+                        <div class="text-xs text-stone-400 mt-1">Pembangunan Berkelanjutan</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ===== /TENTANG KAMPUNG ===== -->
+
+    <!-- ===== TRANSPARANSI — PROGRAM & KEGIATAN DANA DESA ===== -->
+    <section id="transparansi" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-2 text-blue-700 font-semibold tracking-widest text-xs uppercase mb-3 bg-blue-50 px-4 py-1.5 rounded-none">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i> Transparansi Publik
+                </span>
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-slate-900 mb-3">
+                    Publikasi Program &amp; Kegiatan Dana Desa
+                </h2>
+                <p class="text-xl text-slate-600">Kampung Ilunggime — Tahun Anggaran 2026</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+
+            <!-- Daftar Program (Grid Layout) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Item 1: Kemiskinan Ekstrem -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-red-50 text-red-600 flex items-center justify-center text-xl mb-5 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Penanganan Kemiskinan Ekstrem</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Penyaluran BLT Desa maksimal Rp300.000/bulan bagi keluarga rentan, lansia, dan disabilitas melalui keputusan Musdes.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Berketahanan Iklim -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Desa Berketahanan Iklim</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Adaptasi perubahan iklim melalui pengelolaan sampah, pertanian rendah emisi, dan mitigasi bencana lokal.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Layanan Kesehatan -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-5 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Layanan Dasar Kesehatan</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Revitalisasi Posyandu, pencegahan stunting melalui pemberian makanan tambahan, dan penyediaan air bersih.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Ketahanan Pangan -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Ketahanan Pangan & Energi</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Penguatan lumbung pangan warga, pemanfaatan lahan kas desa, serta penguatan modal usaha BUMDes.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Koperasi Desa -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-5 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Koperasi Merah Putih</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Dukungan infrastruktur, pergudangan, dan gerai Koperasi Desa Merah Putih untuk ekonomi arus bawah.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Padat Karya Tunai -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-orange-50 text-orange-600 flex items-center justify-center text-xl mb-5 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-person-digging"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Padat Karya Tunai Desa</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Pembangunan fisik secara swakelola dengan alokasi minimal 50% anggaran untuk upah pekerja lokal.</p>
+                    </div>
+                </div>
+
+                <!-- Item 7: Infrastruktur Digital -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Infrastruktur Digital Desa</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Penyediaan internet desa, website resmi (.id), dan perangkat digital untuk pemutakhiran data SDGs.</p>
+                    </div>
+                </div>
+
+                <!-- Item 8: Sektor Prioritas Lain -->
+                <div class="bg-white p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Program Prioritas Spesifik</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Pendanaan program mendesak skala lokal yang disepakati secara akuntabel melalui Musyawarah Desa.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ===== /TRANSPARANSI ===== -->
+
+    <!-- ===== POTENSI KAMPUNG ===== -->
+    <section id="potensi" class="py-16 md:py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">POTENSI MASYARAKAT KAMPUNG ILUNGGIME</h2>
+                <p class="text-xl text-emerald-700">Kampung Ilunggime, Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="max-w-5xl mx-auto bg-white border border-stone-200 rounded-2xl shadow-sm p-8 md:p-10">
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-emerald-50 text-emerald-700"><i class="fa-solid fa-leaf"></i></span>
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-amber-50 text-amber-600"><i class="fa-solid fa-paw"></i></span>
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-emerald-50 text-emerald-700"><i class="fa-solid fa-seedling"></i></span>
+                    <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-amber-50 text-amber-600"><i class="fa-solid fa-mug-saucer"></i></span>
+                </div>
+
+                <p class="text-base md:text-lg text-stone-700 leading-relaxed mb-6">
+                    Kampung Ilunggime memiliki berbagai potensi sumber daya alam dan usaha masyarakat yang menjadi penopang kehidupan ekonomi warga. Dengan kondisi alam pegunungan yang subur, udara yang sejuk, serta lingkungan yang masih alami, masyarakat memanfaatkan lahan dan sumber daya yang tersedia untuk kegiatan pertanian, perkebunan, dan peternakan.
+                </p>
+
+                <div class="grid gap-6 md:grid-cols-3 items-start">
+                    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 h-full">
+                        <h3 class="text-2xl font-semibold text-emerald-900 mb-3 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 text-emerald-700"><i class="fa-solid fa-paw"></i></span>
+                            Peternakan Masyarakat
+                        </h3>
+                        <p class="text-stone-700 leading-relaxed">Masyarakat Kampung Ilunggime secara turun-temurun mengembangkan usaha peternakan sebagai salah satu sumber pendapatan keluarga, antara lain:</p>
+                        <ul class="mt-3 space-y-2 text-stone-700">
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Peternakan babi sebagai aset ekonomi dan bagian penting dalam kegiatan adat budaya masyarakat Papua.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Peternakan ayam kampung untuk memenuhi kebutuhan konsumsi dan meningkatkan pendapatan rumah tangga.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Budidaya kelinci yang memiliki nilai ekonomi serta berpotensi dikembangkan sebagai usaha peternakan produktif masyarakat.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 h-full">
+                        <h3 class="text-2xl font-semibold text-emerald-900 mb-3 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 text-emerald-700"><i class="fa-solid fa-seedling"></i></span>
+                            Pertanian dan Perkebunan
+                        </h3>
+                        <p class="text-stone-700 leading-relaxed">Sektor pertanian dan perkebunan menjadi mata pencaharian utama sebagian besar masyarakat Kampung Ilunggime, meliputi:</p>
+                        <ul class="mt-3 space-y-2 text-stone-700">
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Budidaya kopi pegunungan yang tumbuh subur di dataran tinggi Papua dan memiliki kualitas yang baik.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Perkebunan sayur-sayuran seperti kubis, wortel, sawi, daun bawang, dan berbagai tanaman hortikultura lainnya.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Budidaya tanaman bawang putih dan bawang merah sebagai komoditas unggulan yang potensial untuk kebutuhan lokal.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Budidaya ubi jalar, keladi, dan tanaman pangan lokal sebagai sumber pangan masyarakat.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Pengembangan kebun masyarakat yang menghasilkan berbagai komoditas untuk kebutuhan keluarga maupun pemasaran lokal.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Budidaya ikan mas haji dan ikan mujair sebagai potensi perikanan yang dapat menunjang pendapatan masyarakat.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 h-full">
+                        <h3 class="text-2xl font-semibold text-emerald-900 mb-3 flex items-center gap-3">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 text-emerald-700"><i class="fa-solid fa-chart-line"></i></span>
+                            Pemberdayaan Ekonomi Kampung
+                        </h3>
+                        <p class="text-stone-700 leading-relaxed">Berbagai potensi tersebut menjadi dasar dalam mendukung pembangunan ekonomi masyarakat melalui:</p>
+                        <ul class="mt-3 space-y-2 text-stone-700">
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Peningkatan ketahanan pangan keluarga.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Pengembangan usaha peternakan dan pertanian berkelanjutan.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Pemberdayaan kelompok tani dan peternak kampung.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Peningkatan pendapatan masyarakat melalui hasil kebun, kopi, dan peternakan.</span></li>
+                            <li class="flex gap-3"><span class="mt-1 text-amber-500"><i class="fa-solid fa-circle-check"></i></span><span>Penguatan ekonomi lokal berbasis sumber daya alam dan kearifan masyarakat setempat.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 border-l-4 border-amber-500 pl-4 py-2">
+                    <p class="text-sm md:text-base text-amber-800 font-semibold">
+                        <span class="block flex items-center gap-2 mb-1"><i class="fa-solid fa-quote-left text-amber-600"></i>Caption Singkat</span>
+                        <span class="italic text-stone-700">“Peternakan babi, ayam, dan kelinci serta budidaya kopi dan berbagai tanaman perkebunan menjadi potensi unggulan masyarakat Kampung Ilunggime dalam membangun ekonomi kampung yang mandiri, produktif, dan berkelanjutan.”</span> 🌿🐖🐇🐓☕🏔️
+                    </p>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <h3 class="text-xl font-bold text-emerald-900">POTENSI PETERNAKAN, PERTANIAN, DAN KOPI KAMPUNG ILUNGGIME</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== /POTENSI KAMPUNG ===== -->
+
+
+    <!-- ===== FASILITAS UMUM ===== -->
+    <section id="fasilitas" 
+         x-data="{ 
+            fasilitasItems: [
+                {
+                    nama: 'Kantor Pelayanan Masyarakat Ilunggime',
+                    kategori: 'Pemerintahan',
+                    deskripsi: 'Pusat pelayanan administrasi dan tata kelola pemerintahan Kampung Ilunggime.',
+                    gambar: './img/KANTOR ILUNGIME.png',
+                    ikon: 'fa-solid fa-building-flag'
+                },
+                {
+                    nama: 'KANTOR KAMPUNG ILUNGGIME',
+                    kategori: 'Pemerintahan',
+                    lokasi: 'Distrik Buguk Gonak, Kabupaten Lanny Jaya, Provinsi Papua Pegunungan',
+                    deskripsi: 'Kantor Kampung Ilunggime merupakan pusat pelayanan dan administrasi masyarakat yang berada di lingkungan pegunungan yang asri, bersih, dan tertata rapi. Kantor ini menjadi simbol pelayanan publik yang dekat dengan masyarakat serta mendukung pembangunan kampung secara berkelanjutan.',
+                    slogan: 'Bersih Lingkungannya, Tertib Pelayanannya, Maju Kampungnya, Sejahtera Masyarakatnya.',
+                    gambar: './img/KANTOR%20KAMPUNG%20ILUNGGIME.png',
+                    ikon: 'fa-solid fa-building'
+                },
+                {
+                    nama: 'NEAS WANIMBO BERSAMA HANO WENE',
+                    kategori: 'Kegiatan Masyarakat',
+                    lokasi: 'Kampung Ilunggime, Kabupaten Lanny Jaya',
+                    deskripsi: 'Kegiatan musyawarah, kolaborasi, dan penggalangan dana untuk mendukung pembangunan infrastruktur dan kesejahteraan masyarakat Kampung Ilunggime.',
+                    slogan: 'Gotong royong membangun masa depan Ilunggime.',
+                    gambar: './img/hano wene.png',
+                    ikon: 'fa-solid fa-solar-panel'
+                },
+                {
+                    nama: 'PANORAMA AWAN DAN PEGUNUNGAN KAMPUNG ILUNGGIME',
+                    kategori: 'Destinasi Alam',
+                    lokasi: 'Kampung Ilunggime, Papua Pegunungan',
+                    deskripsi: 'Panorama alam Kampung Ilunggime yang menampilkan hamparan awan putih, langit biru, dan pegunungan Papua Pegunungan yang masih alami dan indah.',
+                    slogan: 'Negeri di Atas Awan Kampung Ilunggime.',
+                    gambar: './img/panorama awan dan pegunungan.png',
+                    ikon: 'fa-solid fa-mountain'
+                },
+                {
+                    nama: 'GEREJA BAPTIS IMANUEL ILUNGGIME',
+                    kategori: 'Peribadatan',
+                    lokasi: 'Kampung Ilunggime, Papua Pegunungan',
+                    deskripsi: 'Gereja BAPTIS Imanuel Ilunggime merupakan pusat ibadah, persekutuan, dan pembinaan rohani masyarakat Kampung Ilunggime yang berada di tengah panorama pegunungan Papua yang indah.',
+                    slogan: 'Gereja BAPTIS Imanuel Ilunggime, simbol damai, kasih, dan harapan masyarakat.',
+                    gambar: './img/gerej imanuel.png',
+                    ikon: 'fa-solid fa-church'
+                },
+                {
+                    nama: 'PESONA RUMPUT MEI DI KAMPUNG ILUNGGIME',
+                    kategori: 'Wisata Alam',
+                    lokasi: 'Perbukitan Kampung Ilunggime',
+                    deskripsi: 'Fenomena alam Rumput Mei yang menghiasi perbukitan Kampung Ilunggime dengan warna merah muda hingga kemerahan setiap bulan Mei dan menjadi salah satu daya tarik alam khas Papua Pegunungan.',
+                    slogan: 'Hamparan Rumput Mei yang memperindah Pegunungan Ilunggime.',
+                    gambar: './img/Rumput mei.png',
+                    ikon: 'fa-solid fa-seedling'
+                },
+                {
+                    nama: 'KEDIAMAN PELAYANAN DAN PEMBERDAYAAN MASYARAKAT DI KAMPUNG ILUNGGIME',
+                    kategori: 'Fasilitas Masyarakat',
+                    lokasi: 'Lingkungan kampung yang bersih dan tertata',
+                    deskripsi: 'Bangunan pelayanan masyarakat yang berada di lingkungan kampung yang bersih, tertata, dan dikelilingi panorama pegunungan Papua Pegunungan.',
+                    slogan: 'Pesona Alam dan Kehidupan Masyarakat Ilunggime.',
+                    gambar: './img/KANTOR KAMPUNG ILUNGGIME.png',
+                    ikon: 'fa-solid fa-house-user'
+                },
+
+                {
+                    nama: 'Wisata Alam Ilunggime',
+                    kategori: 'Destinasi Wisata',
+                    deskripsi: 'Ekowisata pegunungan dengan panorama alam yang masih asri dan menawan.',
+                    gambar: './img/air tejun elak takur.png',
+                    ikon: 'fa-solid fa-compass-drafting'
+                },
+                {
+                    nama: 'Spot Foto Panorama Ilunggime',
+                    kategori: 'Destinasi Wisata',
+                    deskripsi: 'Area pandang estetis dengan hamparan awan, pegunungan, dan langit Papua Pegunungan.',
+                    gambar: './img/panorama awan dan pegunungan.png',
+                    ikon: 'fa-solid fa-camera-retro'
+                }
+            ]
+         }"
+         class="py-16 md:py-24 bg-stone-100">
+         
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">Fasilitas Umum</h2>
+                <p class="text-xl text-emerald-700 max-w-2xl mx-auto">Infrastruktur pendukung pelayanan masyarakat, pendidikan, peribadatan, dan pariwisata di Kampung Ilunggime</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <template x-for="(fasilitas, index) in fasilitasItems" :key="index">
+                    <div class="group bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 rounded-lg flex flex-col justify-between">
+                        
+                        <div>
+                            <div class="relative aspect-video w-full overflow-hidden bg-stone-200">
+                                <img :src="fasilitas.gambar" 
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                                    :alt="fasilitas.nama">
+                                <span class="absolute top-3 left-3 bg-emerald-900/90 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full tracking-wide uppercase shadow-sm"
+                                    x-text="fasilitas.kategori"></span>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex items-start gap-3 mb-2">
+                                    <div class="text-xl text-amber-500 mt-1 flex-shrink-0">
+                                        <i :class="fasilitas.ikon"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-emerald-950 leading-tight" x-text="fasilitas.nama"></h3>
+                                </div>
+                                <p class="text-stone-600 text-sm leading-relaxed" x-text="fasilitas.deskripsi"></p>
+                                <template x-if="fasilitas.lokasi">
+                                    <p class="mt-3 text-xs font-semibold text-emerald-700" x-text="fasilitas.lokasi"></p>
+                                </template>
+                                <template x-if="fasilitas.slogan">
+                                    <p class="mt-2 text-xs italic text-amber-700" x-text="fasilitas.slogan"></p>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div class="px-6 pb-6 mt-2">
+                            <div class="w-full h-[2px] bg-stone-100 group-hover:bg-amber-400 transition-colors duration-300"></div>
+                        </div>
+
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+    <!-- ===== /FASILITAS UMUM ===== -->  
+
+    <!-- ===== GALERI ===== -->
+    <section id="galeri"
+            x-data="{ 
+                lightboxOpen: false, 
+                activeImg: '', 
+                activeAlt: '',
+                items: [
+                    {
+                        img: './img/air%20tejun%20elak%20takur.png',
+                        alt: 'Air Terjun Elak Takur Kampung Ilunggime',
+                        caption: 'Air Terjun Elak Takur'
+                    },
+                    {
+                        img: './img/panorama%20awan%20dan%20pegunungan.png',
+                        alt: 'Panorama awan dan pegunungan Kampung Ilunggime',
+                        caption: 'Panorama Awan & Pegunungan'
+                    },
+                    {
+                        img: './img/12ii.png',
+                        alt: 'Panorama Negeri Awan Ilunggime',
+                        caption: 'Panorama Negeri Awan Ilunggime'
+                    },
+                    {
+                        img: './img/gerej%20imanuel.png',
+                        alt: 'Gereja Baptis Imanuel Kampung Ilunggime Dan Kelonome',
+                        caption: 'Gereja Baptis Imanuel Kampung Ilunggime Dengan Kelonome'
+                    },
+                    {
+                        img: './img/KANTOR%20KAMPUNG%20ILUNGGIME.png',
+                        alt: 'Kantor Kampung Ilunggime',
+                        caption: 'Kantor Kampung Ilunggime'
+                    },
+                    {
+                        img: './img/kEGiIATANG.png',
+                        alt: 'Kegiatan masyarakat dan kolaborasi pembangunan Kampung Ilunggime',
+                        caption: 'Kegiatan Masyarakat Ilunggime'
+                    },
+                    {
+                        img: './img/Rumput%20mei.png',
+                        alt: 'Pesona Rumput Mei di Kampung Ilunggime',
+                        caption: 'Rumput Mei Ilunggime'
+                    },
+                    {
+                        img: './img/kelapa%20utang.jpg',
+                        alt: 'Musim Panen Kelapa Hutan di Kampung Ilunggime',
+                        caption: 'Musim Panen Kelapa Hutan'
+                    },
+                    {
+                        img: './img/hano wene.png',
+                        alt: 'Kegiatan penggalangan dana pembangunan PLTA di Kampung Ilunggime',
+                        caption: 'Penggalangan Dana PLTA'
+                    }
+                ]
+            }"
+            x-effect="document.body.style.overflow = lightboxOpen ? 'hidden' : ''"
+            class="py-16 md:py-24 bg-stone-100">
+            
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">Galeri Kampung Ilunggime</h2>
+                <p class="text-xl text-emerald-700 max-w-md mx-auto">Potret keindahan alam, budaya, dan kehidupan masyarakat Kampung Ilunggime</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Loop Item Galeri menggunakan Alpine.js -->
+                <template x-for="(item, index) in items" :key="index">
+                    <button type="button"
+                            @click="lightboxOpen = true; activeImg = item.img; activeAlt = item.alt"
+                            class="group relative aspect-square overflow-hidden cursor-pointer focus:outline-none focus:ring-4 focus:ring-amber-400/60 rounded-lg shadow-md">
+                        
+                        <img :src="item.img" 
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                            :alt="item.alt">
+                        
+                        <!-- Overlay Masker (Hover Effect) -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-colors duration-300">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+                        </div>
+                        
+                        <!-- Floating Caption (Bawah Rata Kiri) -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-left pointer-events-none">
+                            <span class="text-xs md:text-sm font-medium text-white tracking-wide drop-shadow-sm" x-text="item.caption"></span>
+                        </div>
+                    </button>
+                </template>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div x-show="lightboxOpen"
+            x-cloak
+            x-transition.opacity
+            @keydown.escape.window="lightboxOpen = false"
+            @click.self="lightboxOpen = false"
+            role="dialog"
+            aria-modal="true"
+            class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 md:p-8">
+            <button @click="lightboxOpen = false"
+                    aria-label="Tutup gambar"
+                    class="absolute top-4 right-4 md:top-6 md:right-6 text-white text-3xl md:text-4xl leading-none hover:text-amber-400 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img :src="activeImg" :alt="activeAlt"
+                @click.stop
+                x-transition
+                class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl">
+        </div>
+    </section>
+    <!-- ===== /GALERI ===== -->
+
+    <!-- ===== PEMERINTAHAN KAMPUNG ===== -->
+    <section id="pemerintahan" class="py-16 md:py-24 bg-emerald-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">Pemerintahan Kampung</h2>
+                <p class="text-xl text-emerald-700 max-w-2xl mx-auto">Struktur pemerintahan dan layanan publik Kampung Ilunggime</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            <!-- Struktur Pemerintahan -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <!-- Kepala Kampung -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow col-span-full md:col-span-1">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-amber-500 text-white rounded-full text-2xl">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-amber-600 font-semibold mb-1">Kepala Kampung</p>
+                        <h3 class="font-bold text-emerald-900 text-lg mb-1">— (Nama Kepala Kampung)</h3>
+                        <p class="text-sm text-stone-500">Pimpinan tertinggi Kampung Ilunggime</p>
+                    </div>
+                </div>
+
+                <!-- Sekretaris -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-emerald-900 text-amber-400 rounded-full text-2xl">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-1">Sekretaris Kampung</p>
+                        <h3 class="font-bold text-emerald-900 mb-1">— (Nama Sekretaris)</h3>
+                        <p class="text-sm text-stone-500">Administrasi & tata kelola kampung</p>
+                    </div>
+                </div>
+
+                <!-- Bendahara -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-emerald-900 text-amber-400 rounded-full text-2xl">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-1">Bendahara Kampung</p>
+                        <h3 class="font-bold text-emerald-900 mb-1">— (Nama Bendahara)</h3>
+                        <p class="text-sm text-stone-500">Pengelolaan keuangan kampung</p>
+                    </div>
+                </div>
+
+                <!-- Kepala Urusan Umum -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-emerald-900 text-amber-400 rounded-full text-2xl">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-1">Kaur Umum</p>
+                        <h3 class="font-bold text-emerald-900 mb-1">— (Nama Kaur Umum)</h3>
+                        <p class="text-sm text-stone-500">Urusan umum dan tata usaha</p>
+                    </div>
+                </div>
+
+                <!-- Kepala Seksi Pemerintahan -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-emerald-900 text-amber-400 rounded-full text-2xl">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-1">Kasi Pemerintahan</p>
+                        <h3 class="font-bold text-emerald-900 mb-1">— (Nama Kasi Pem.)</h3>
+                        <p class="text-sm text-stone-500">Layanan pemerintahan & kependudukan</p>
+                    </div>
+                </div>
+
+                <!-- Ketua BPK / Badan Permusyawaratan Kampung -->
+                <div class="bg-white border border-emerald-100 p-6 flex items-start gap-4 shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="shrink-0 w-14 h-14 flex items-center justify-center bg-emerald-900 text-amber-400 rounded-full text-2xl">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-1">Ketua BPK</p>
+                        <h3 class="font-bold text-emerald-900 mb-1">— (Nama Ketua BPK)</h3>
+                        <p class="text-sm text-stone-500">Badan Permusyawaratan Kampung</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layanan Administrasi -->
+            <div class="bg-emerald-900 text-white p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h3 class="section-title text-2xl md:text-3xl font-bold mb-2">Layanan Administrasi Kampung</h3>
+                    <p class="text-emerald-200 max-w-2xl mx-auto">Layanan surat menyurat dan administrasi yang dapat diperoleh di kantor Kampung Ilunggime</p>
+                </div>
+                <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white/10 p-4 text-center rounded">
+                        <i class="fa-solid fa-id-card text-amber-400 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Surat Keterangan Domisili</p>
+                    </div>
+                    <div class="bg-white/10 p-4 text-center rounded">
+                        <i class="fa-solid fa-file-signature text-amber-400 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Surat Keterangan Usaha</p>
+                    </div>
+                    <div class="bg-white/10 p-4 text-center rounded">
+                        <i class="fa-solid fa-file-circle-check text-amber-400 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Surat Keterangan Tidak Mampu</p>
+                    </div>
+                    <div class="bg-white/10 p-4 text-center rounded">
+                        <i class="fa-solid fa-house-circle-check text-amber-400 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Surat Keterangan Lainnya</p>
+                    </div>
+                </div>
+                <p class="text-center text-emerald-300 text-sm mt-6">
+                    <i class="fa-solid fa-clock mr-2"></i>Jam Layanan: Senin – Jumat, 08.00 – 16.00 WIT
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ===== /PEMERINTAHAN KAMPUNG ===== -->
+
+    <!-- ===== KONTAK ===== -->
+    <section id="kontak" class="py-16 md:py-24 bg-emerald-900 text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold mb-3">Hubungi Kami</h2>
+                <p class="text-emerald-100">Sampaikan pesan, pertanyaan, atau keperluan Anda kepada Kampung Ilunggime</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Info Kontak -->
+                <div>
+                    <div class="mb-10">
+                        <div class="flex items-start gap-4 text-2xl mb-8">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                            <div>
+                                <div class="font-medium text-lg">Alamat</div>
+                                <div class="text-emerald-200 text-base leading-relaxed" data-bind-html="contact.addressHtml">Kampung Ilunggime, Distrik Buguk Gonak,<br>Kabupaten Lanny Jaya, Provinsi Papua Pegunungan</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 text-2xl mb-8">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <div>
+                                <div class="font-medium text-lg">Telepon / WhatsApp</div>
+                                <div class="text-emerald-200 text-base" data-bind-text="contact.phoneDisplay">+62 8xx-xxxx-xxxx</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 text-2xl mb-8">
+                            <i class="fa-solid fa-envelope text-amber-400"></i>
+                            <div>
+                                <div class="font-medium text-lg">Email</div>
+                                <div class="text-emerald-200 text-base" data-bind-text="contact.email">kampungilunggime@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-2xl">
+                            <i class="fa-solid fa-clock text-amber-400"></i>
+                            <div>
+                                <div class="font-medium text-lg">Jam Operasional</div>
+                                <div class="text-emerald-200 text-base" data-bind-text="contact.operationalHours">Senin – Jumat: 08.00 – 16.00 WIT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 text-3xl">
+                        <a href="#" target="_blank" class="hover:text-amber-400 transition-colors" aria-label="Facebook Kampung Ilunggime" data-bind-attr="href:contact.social.facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" class="hover:text-amber-400 transition-colors" aria-label="Instagram Kampung Ilunggime" data-bind-attr="href:contact.social.instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" data-wa-link target="_blank" rel="noopener" class="hover:text-amber-400 transition-colors" aria-label="WhatsApp Kampung Ilunggime">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Kontak -->
+                <form onsubmit="kirimPesan(event)" class="space-y-6">
+                    <div>
+                        <input type="text" id="nama" placeholder="Nama lengkap" required
+                               class="w-full bg-white/10 border border-white/30 rounded-none px-6 py-4 text-white placeholder:text-emerald-200 focus:outline-none focus:border-amber-400">
+                    </div>
+                    <div>
+                        <input type="tel" id="telpon" placeholder="Nomor HP / WhatsApp" required
+                               class="w-full bg-white/10 border border-white/30 rounded-none px-6 py-4 text-white placeholder:text-emerald-200 focus:outline-none focus:border-amber-400">
+                    </div>
+                    <div>
+                        <select id="keperluan" required
+                                class="w-full bg-white/10 border border-white/30 rounded-none px-6 py-4 text-emerald-200 focus:outline-none focus:border-amber-400 appearance-none option-custom">
+                            <option value="" disabled selected class="text-emerald-800">Pilih Keperluan...</option>
+                            <option value="Wisata Kampung" class="text-emerald-900">Wisata Kampung Ilunggime</option>
+                            <option value="Layanan Administrasi" class="text-emerald-900">Layanan Administrasi</option>
+                            <option value="Investasi & Kemitraan" class="text-emerald-900">Investasi &amp; Kemitraan</option>
+                            <option value="Kegiatan Budaya" class="text-emerald-900">Kegiatan Budaya &amp; Adat</option>
+                            <option value="Informasi Umum" class="text-emerald-900">Informasi Umum</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea id="pesan" rows="4" placeholder="Tulis pesan atau pertanyaan Anda di sini..." required
+                                  class="w-full bg-white/10 border border-white/30 rounded-none px-6 py-4 text-white placeholder:text-emerald-200 focus:outline-none focus:border-amber-400 resize-none"></textarea>
+                    </div>
+                    <button type="submit"
+                            class="w-full bg-amber-500 hover:bg-amber-400 transition-colors text-emerald-900 font-semibold py-5 tracking-widest flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> KIRIM PESAN KE WHATSAPP
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ===== /KONTAK ===== -->
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-emerald-950 text-emerald-300 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center mb-6">
+                    <img src="img/logoil.png" 
+                    alt="Logo Kabupaten Lanny Jaya" 
+                    class="h-24 opacity-75 rounded-full"
+                    onerror="this.style.display='none'">
+
+
+            </div>
+            <p class="logo-text text-xl font-bold text-white mb-1" data-bind-text="hero.title">KAMPUNG ILUNGGIME</p>
+            <p class="text-sm text-emerald-400 mb-4" data-bind-text="site.tagline">Distrik Buguk Gonak &bull; Kabupaten Lanny Jaya &bull; Provinsi Papua Pegunungan</p>
+            <p class="text-sm" data-bind-text="footer.copyright">© 2026 Pemerintah Kampung Ilunggime. Hak cipta dilindungi.</p>
+            <p class="text-xs mt-2 text-emerald-400" data-bind-text="footer.note">Bersama membangun Kampung Ilunggime yang maju, mandiri, aman, dan sejahtera.</p>
+            <p class="text-xs mt-4">
+                Powered by <a href="https://royswanimbo-dev.github.io/royswanimbo.io/" target="_blank" class="text-emerald-400 hover:underline" data-bind-text="footer.poweredByName" data-bind-attr="href:footer.poweredByUrl">Roys Wanimbo</a>
+            </p>
+        </div>
+    </footer>
+    <!-- ===== /FOOTER ===== -->
+
+    <!-- ===== FLOATING ACTION BUTTONS ===== -->
+    <!-- Kanan bawah: tombol Chat WhatsApp di atas, tombol Back to Top di bawah -->
+    <div class="fixed bottom-5 right-5 z-[90] flex flex-col items-center gap-3 print:hidden">
+        <!-- Chat WhatsApp -->
+        <a data-wa-link data-wa-prefill
+           href="#"
+           target="_blank"
+           rel="noopener"
+           aria-label="Chat via WhatsApp"
+           title="Chat via WhatsApp"
+           class="fab flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300/60">
+            <i class="fa-brands fa-whatsapp text-2xl md:text-3xl"></i>
+        </a>
+        <!-- Back to Top -->
+        <button id="backToTop"
+                type="button"
+                aria-label="Kembali ke atas"
+                title="Kembali ke atas"
+                class="fab opacity-0 translate-y-4 pointer-events-none flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-emerald-900 hover:bg-emerald-800 text-amber-400 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-300/60">
+            <i class="fa-solid fa-arrow-up text-lg md:text-xl"></i>
+        </button>
+    </div>
+    <!-- ===== /FLOATING ACTION BUTTONS ===== -->
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        /* ============================================================
+           KONFIGURASI SITUS (data.json)
+           ============================================================ */
+
+        /* Nilai bawaan; dipakai bila data.json gagal dimuat (mis. dibuka via file://). */
+        var SITE = {
+            site:    { name: 'Kampung Ilunggime' },
+            contact: { whatsappNumber: '628xxxxxxxxx' },
+            hero:    {
+                slides: [
+                    './img/air tejun elak takur.png',
+                    './img/kantor ilungime.png',
+                    './img/Rumput mei.png',
+                    './img/neas-bersama-hano-wene-mengumpulkan-dana -untuk-membangun-plta-di-kampung-iIllunggime-kabupaten-lanny-jaya.jpg',
+                    './img/panorama awan dan pegunungan.png',
+                    './img/gerej imanuel.png'
+                ]
+            }
+        };
+
+        /* Ambil nilai objek dari path bertitik, mis. "contact.email". */
+        function getByPath(obj, path) {
+            return path.split('.').reduce(function (acc, key) {
+                return (acc == null) ? undefined : acc[key];
+            }, obj);
+        }
+
+        /* Terapkan binding teks/HTML/atribut data.json ke elemen [data-bind-*]. */
+        function applyBindings(data) {
+            document.querySelectorAll('[data-bind-text]').forEach(function (el) {
+                var val = getByPath(data, el.getAttribute('data-bind-text'));
+                if (val != null) el.textContent = val;
+            });
+            document.querySelectorAll('[data-bind-html]').forEach(function (el) {
+                var val = getByPath(data, el.getAttribute('data-bind-html'));
+                if (val != null) el.innerHTML = val;
+            });
+            document.querySelectorAll('[data-bind-attr]').forEach(function (el) {
+                el.getAttribute('data-bind-attr').split(',').forEach(function (pair) {
+                    var idx = pair.indexOf(':');
+                    if (idx === -1) return;
+                    var attr = pair.slice(0, idx).trim();
+                    var val  = getByPath(data, pair.slice(idx + 1).trim());
+                    if (val != null) el.setAttribute(attr, val);
+                });
+            });
+        }
+
+        /* Perbarui <title>, meta SEO/OG/Twitter, favicon, dan theme color. */
+        function applyMeta(data) {
+            var meta = data.meta || {};
+            var site = data.site || {};
+
+            function setContent(selector, value) {
+                if (value == null) return;
+                var el = document.querySelector(selector);
+                if (el) el.setAttribute('content', value);
+            }
+
+            if (meta.title) document.title = meta.title;
+            setContent('meta[name="title"]', meta.title);
+            setContent('meta[name="description"]', meta.description);
+            setContent('meta[name="keywords"]', meta.keywords);
+            setContent('meta[name="author"]', meta.author);
+            setContent('meta[property="og:title"]', meta.ogTitle || meta.title);
+            setContent('meta[property="og:description"]', meta.ogDescription || meta.description);
+            setContent('meta[property="og:image"]', meta.ogImage);
+            setContent('meta[property="og:url"]', site.url);
+            setContent('meta[property="og:site_name"]', site.name);
+            setContent('meta[name="twitter:title"]', meta.twitterTitle || meta.title);
+            setContent('meta[name="twitter:description"]', meta.twitterDescription || meta.description);
+            setContent('meta[name="twitter:image"]', meta.twitterImage || meta.ogImage);
+            setContent('meta[name="theme-color"]', site.themeColor);
+            setContent('meta[name="msapplication-TileColor"]', site.themeColor);
+
+            if (site.favicon) {
+                document.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"], link[rel="shortcut icon"]')
+                    .forEach(function (link) { link.setAttribute('href', site.favicon); });
+            }
+        }
+
+        /* Set href semua tombol/ikon WhatsApp ([data-wa-link]) dari nomor data.json. */
+        function applyWhatsappLinks(data) {
+            var contact = data.contact || {};
+            var number  = contact.whatsappNumber || SITE.contact.whatsappNumber;
+            document.querySelectorAll('[data-wa-link]').forEach(function (link) {
+                var text = link.hasAttribute('data-wa-prefill')
+                    ? contact.whatsappMessage
+                    : link.getAttribute('data-wa-text');
+                link.setAttribute('href', 'https://wa.me/' + number + (text ? '?text=' + encodeURIComponent(text) : ''));
+            });
+        }
+
+        /* ============================================================
+           HERO BACKGROUND SLIDESHOW
+           ============================================================ */
+        function initHeroSlideshow(images) {
+            var slideshow = document.getElementById('hero-slideshow');
+            if (!slideshow || !images || !images.length) return;
+            slideshow.innerHTML = '';
+
+            var slides = images.map(function (src) {
+                var slide = document.createElement('div');
+                slide.className = 'hero-slide';
+                slide.style.backgroundImage = "url('" + src + "')";
+                slideshow.appendChild(slide);
+                return slide;
+            });
+
+            var current  = 0;
+            var INTERVAL = 6000;
+
+            function activate(index) {
+                slides.forEach(function (s) { s.classList.remove('is-active'); });
+                var slide = slides[index];
+                slide.classList.add('is-active');
+                slide.classList.remove('zoom-in', 'zoom-out');
+                void slide.offsetWidth;
+                slide.classList.add(index % 2 === 0 ? 'zoom-in' : 'zoom-out');
+            }
+
+            activate(0);
+            if (slides.length > 1) {
+                setInterval(function () {
+                    current = (current + 1) % slides.length;
+                    activate(current);
+                }, INTERVAL);
+            }
+        }
+
+        /* ============================================================
+           SCROLL-SPY (menyorot menu sesuai posisi scroll)
+           ============================================================ */
+        function initScrollSpy() {
+            var sections = document.querySelectorAll('section[id]');
+            var navLinks = document.querySelectorAll('.nav-link');
+            if (!sections.length || !navLinks.length) return;
+
+            function setActive(id) {
+                navLinks.forEach(function (link) {
+                    link.classList.toggle('nav-active', link.getAttribute('href') === '#' + id);
+                });
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            }, { rootMargin: '-45% 0px -55% 0px', threshold: 0 });
+
+            sections.forEach(function (section) { observer.observe(section); });
+        }
+
+        /* ============================================================
+           TOMBOL MENGAMBANG: BACK TO TOP
+           ============================================================ */
+        function initBackToTop() {
+            var btn = document.getElementById('backToTop');
+            if (!btn) return;
+
+            function toggle() {
+                if (window.scrollY > 400) {
+                    btn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                } else {
+                    btn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                }
+            }
+
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            window.addEventListener('scroll', toggle, { passive: true });
+            toggle();
+        }
+
+        /* ============================================================
+           WHATSAPP & FORM KONTAK
+           ============================================================ */
+
+        /* Buka WhatsApp dengan pertanyaan tentang potensi tertentu. */
+        function hubungiKami(namaPotensi) {
+            var nomorWA = SITE.contact.whatsappNumber;
+            var teks = 'Halo Admin ' + SITE.site.name + ',%0A' +
+                       'Saya ingin mengetahui lebih lanjut tentang:%0A%0A' +
+                       '📌 *' + namaPotensi + '*%0A%0A' +
+                       'Mohon informasinya. Terima kasih!';
+            window.open('https://api.whatsapp.com/send?phone=' + nomorWA + '&text=' + teks, '_blank');
+        }
+
+        /* Kirim isian form kontak ke WhatsApp admin. */
+        function kirimPesan(event) {
+            event.preventDefault();
+            var nama      = document.getElementById('nama').value;
+            var telpon    = document.getElementById('telpon').value;
+            var keperluan = document.getElementById('keperluan').value;
+            var pesan     = document.getElementById('pesan').value;
+            var nomorWA   = SITE.contact.whatsappNumber;
+            var teks = 'Halo Admin ' + SITE.site.name + ', saya ingin menghubungi:%0A%0A' +
+                       '*Data Pengirim:*%0A' +
+                       '• Nama: ' + nama + '%0A' +
+                       '• HP/WA: ' + telpon + '%0A%0A' +
+                       '*Keperluan:*%0A👉 *' + keperluan + '*%0A%0A' +
+                       '*Pesan:*%0A"' + pesan + '"';
+            window.open('https://api.whatsapp.com/send?phone=' + nomorWA + '&text=' + teks, '_blank');
+        }
+
+        /* Smooth scroll ke section tujuan. */
+        function smoothScrollTo(sectionId) {
+            var element = document.getElementById(sectionId);
+            if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        /* ============================================================
+           INISIALISASI
+           ============================================================ */
+        function applySiteData(data) {
+            SITE = data;
+            applyMeta(data);
+            applyBindings(data);
+            applyWhatsappLinks(data);
+            initHeroSlideshow((data.hero && data.hero.slides) || SITE.hero.slides);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            initScrollSpy();
+            initBackToTop();
+
+            fetch('./data.json', { cache: 'no-cache' })
+                .then(function (res) {
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    return res.json();
+                })
+                .then(function (data) { applySiteData(data); })
+                .catch(function (err) {
+                    console.warn('data.json tidak dapat dimuat, memakai nilai bawaan.', err);
+                    applyWhatsappLinks(SITE);
+                    initHeroSlideshow(SITE.hero.slides);
+                });
+
+            console.log('%cWebsite siap!', 'color:#10b981; font-family:monospace');
+        });
+    </script>
+    
+</body>
+</html>
