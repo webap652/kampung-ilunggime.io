@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webap652.github.io/kampung-ilunggime.io//sitemap.xml
